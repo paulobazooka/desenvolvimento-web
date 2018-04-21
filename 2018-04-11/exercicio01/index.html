@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="application-name" content="Validar Formulário">
+        <meta name="author" content="Paulo Sérgio do Nascimento 160013-3">
+        <meta name="description" content="Aplicação para validação de formulário">
+        
+        <script src="scripts/app.js" type="text/javascript"></script>
+        <link href="styles/style.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <main>
+            <div class="bloco0">
+                <small class="feedback" id="feedback"></small>            
+            </div>
+            
+            <div class="bloco1">
+                    <fieldset>
+                        <legend>Fomulário</legend>
+                        <label>Nome <input type="text" size="70" name="nome" id="nome" placeholder="Nome do usuário"></label>
+                        <label>Rua <input type="text" size="50" name="rua" id="rua"></label>
+                        <label>Bairro <input type="text" size="30" name="bairro" id="bairro"></label>
+                        <label>Cidade  
+                                   <select name="cidade" id="cidade">
+                                        <option value="Sumaré">Sumaré</option>
+                                        <option value="Campinas">Campinas</option>
+                                        <option value="Hortolândia">Hortolândia</option>
+                                        <option value="Americana">Americana</option>
+                                   </select> 
+                        </label>
+                        <label>Estado <input type="text" name="estado" id="estado" size="20"></label>
+                        <hr>
+                        <label>Data de Nascimento <input type="date" name="dtnas" id="dtnas" size="10"></label>
+                        <label>Idade <input type="number" name="idade" id="idade"></label>
+                        <button onclick="exibeDados();">ENVIAR</button>
+                    </fieldset>
+            </div>
+            
+            <div class="bloco2" id="bloco2">
+                
+            </div>
+            
+            <div class="bloco3" id="bloco3">
+            
+            </div>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,18 @@
+table, tr, td, th{
+    font-family: fantasy;
+    border: 1px black solid;
+}
+
+td{
+    padding: 25px ;
+    color: purple;
+}
+
+h1{
+    color: purple;
+    font-family: fantasy;
+}
+
+.destaque1{
+    background-color: lightgray;
+}

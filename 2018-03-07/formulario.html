@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <!-- Paulo Sérgio do Nascimento  160013-3 -->
+<head>
+    <meta charset="utf-8" lang="pt-BR">
+	<title>Formulário</title>
+    
+    <style>
+        .fonte{
+            font-family: sans-serif;
+            font-size-adjust: auto;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <form action="" id="formulario">
+         <div id="titulo">
+            <h1 class="fonte">Cadastro em Curso</h1>
+        </div>
+
+        <div id="dados" class="fonte">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    Nome <input type="text" name="nome" required alt="nome" autofocus><br>
+                    Endereco <input type="text" name="endereco" required alt="endereco"><br>
+                    Data de Nascimento <input type="date" name="datanasc" required alt="data_nascimento"><br>
+                    e-mail <input type="email" name="email" required alt="email"><br>
+                    Telefone <input type="tel" required alt="telefone"><br>
+                    sexo:<input type="radio" name="sexo" value="sexo" required>Feminino
+                         <input type="radio" name="sexo" value="sexo" required>Masculino<br> 
+            </fieldset>    
+        </div>
+
+        <div id="cursos" class="fonte">
+            <fieldset>
+                <legend>Cursos</legend>
+                    <select name="cursos" required>
+                        <option value="ads">Análise e Desenvolvimento de Sistemas</option> 
+                        <option value="tecinfo">Técnico em Informática</option>
+                        <option value="tecele">Técnico em Eletroeletrônica</option>
+                        <option value="ped">Pedagogia</option><br>
+                    </select>
+            </fieldset>    
+        </div>
+        
+        <div id="historico" class="fonte">
+           <fieldset>
+               <legend>Histórico Escolar</legend>
+               <input type="file" name="arquivo" required>
+           </fieldset>
+            
+        </div>
+        
+        <div id="submit" class="fonte">
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+   
+</body>
+</html>

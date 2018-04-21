@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="Array">
+    <meta name="author" content="Paulo Sérgio do Nascimento 160013-3">
+    <meta name="description" content="Testar funcionalidades de array">
+      
+    <script src="scripts/app.js" type="text/javascript"></script>
+    <link href="styles/style.css" rel="stylesheet">
+        
+</head>
+
+<body>
+    <main>
+        <div id="entrada">
+            <fieldset>
+                <legend>Digite um animal</legend>
+                <label>Animal: <input type="text" name="animal" id="animal" size="80"></label>
+                <br>
+                <button name="in_fim" id="in_fim" onclick="incluirFinal();">Incluir Fim</button>
+                <button name="in_ini" id="in_ini" onclick="incluirInicio();">Incluir Inicio</button>
+                <button name="rm_fim" id="rm_fim" onclick="removerFinal();">Remover Fim</button>
+                <button name="rm_ini" id="rm_ini" onclick="removerInicio();">Remover Inicio</button>
+                <button name="digitados" id="digitados" onclick="exibirAnimais();">Digitados</button>
+                <button name="aleatorio" id="aleatorio" onclick="aleatorio();">Aleatório</button>
+            </fieldset>
+        </div>
+        
+        <div id="saida">
+        
+        </div>
+    </main>
+</body>
+
+</html>

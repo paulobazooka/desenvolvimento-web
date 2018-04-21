@@ -1,0 +1,123 @@
+body{
+   margin: -1px;
+   max-width: 400px;
+}
+
+
+main{
+    position: relative;
+    margin: auto;
+    background-image: linear-gradient(#bad1cd, #f2f6f5);
+    max-width: 400px;
+}
+
+
+#painel{
+    visibility: hidden; 
+    position: relative;
+    height: 0px;
+    max-width: 400px;
+    background-color: #aabebb;
+}
+
+
+#titulo{
+    visibility: hidden;
+    height: 0px;
+    max-width: 400px;
+}
+
+#menu_top{   
+    top: -10px;
+    max-width: 400px;
+    position: relative;
+    float: left;
+    text-align: left;
+    background-color: #aabebb;  
+}
+
+
+.menu_item{
+    display: block;
+    width: 100px;
+    font-size: 10px;
+    padding: 2px;
+    text-decoration: none;    
+    background-color: #aabebb;
+    color: #333938;
+}
+
+.menu_item:hover{
+    background-color: #667370;
+    color: #FFFFFA;
+    transition-duration: 0.4s;
+}
+
+#foto{
+    position: relative;
+    float: left;
+    margin-left: 20px;  
+    height: 290px;
+}
+
+#imagem_perfil{
+    width: 100px;
+    height: 90px;
+}
+
+#informacoes_pessoais{
+    text-align: justify;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 600px;
+    height: 300px;
+    text-indent: 30px;
+    line-height: 25px;
+    color: #333938; 
+}
+
+#informacoes_profissionais{
+    position: relative;
+    float: left;
+    width: 460px;
+    height: 300px;
+    margin: 20px; 
+}
+
+#escolaridade{
+    position: relative;
+    float: right;
+    width: 460px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 25px;
+    border-bottom: 1px solid #CC6633;
+    border-top: 1px solid #CC6633;
+    background-image:url("../images/aspas.png");
+    background-repeat: no-repeat;
+}
+
+
+aside p{
+    float: right;
+    font-size: 21px;
+    color: #999;
+}
+
+
+footer{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 960px;
+    clear: both;
+    color: #999;
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f6f5;
+}

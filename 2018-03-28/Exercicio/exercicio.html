@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="application-name" content="Aplicação com JavaScript">
+    <meta name="author" content="Paulo Sérgio do Nascimento">
+    <meta name="description" content="Exercicio para entregar 28-03-2018">
+    <title>Exercício para entregar</title>
+    
+    <script type="text/javascript">
+        function bemvindo(){
+            alert("Bem Vindo a minha página");
+        }
+        
+        function ola(){
+            alert("Olá!");
+        }
+        
+        function mudaCor(){
+            document.getElementById("div").style.backgroundColor="#cc2ab3";
+        }
+        
+        function eleitor(){
+            var idade = document.getElementById("entrada").value;
+            
+            if(idade > 65){
+                document.write("Voto Facultativo!");
+            }else
+                if(idade >= 18){
+                    document.write("Voto Obrigatório!");
+                }else
+                    if(idade<18 && idade>=16){
+                        document.write("Voto Facultativo");
+                    }
+        }
+    
+    </script>
+    
+</head>
+
+<body onload="bemvindo();">
+    <main>
+        <div>
+            <button onclick="ola();">Botão</button>
+        </div>
+        
+        <div id="div" style="width: 700px; height: 200px; background-color: dodgerblue" onmouseover="mudaCor();">
+        </div>
+        <div style="background-color: cadetblue; width: 700px; height: 200px">
+            <form>
+                Idade: 
+                <input id="entrada" size="20px" type="number">
+                <input type="button" value="Confirmar" onclick="eleitor();">
+            </form>        
+        </div>     
+    </main>
+</body>
+
+</html>

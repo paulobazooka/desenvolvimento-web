@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Paulo Sérgio do Nascimento 160013-3">
+    <meta name="application-name" content="">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
+    <title></title>
+</head>
+<body>
+    <main onload='criarLivro("Aquele dia", "Jurandir Vieira", "Vagalume", 198, "Ficção")'>
+        <div>
+            <div id="bloco1">
+                <fieldset id="cadastro">
+                    <legend>Sistema de Livros</legend>
+                    <label>Livro</label>
+                    <input id="nome" name="nome" type="text" size="50"> <br>
+                    <label>Autor</label>
+                    <input id="autor" name="autor" type="text" size="50"> <br>
+                    <label>Editora</label>
+                    <input id="editora" name="editora" type="text" size="15">
+                    <label>Paginas</label>
+                    <input id="paginas" name="paginas" type="number" size="2"><br>
+                    <label>Genero</label>
+                    <input id="genero" name="genero" type="text" size="15"> <br> <br>
+                    
+                    <button id="cadastrar" name="cadastrar" onclick="criarLivro();">Cadastrar</button>
+                    <button id="listar" name="listar" onclick="imprimirLivros();">Imprimir</button>
+                </fieldset>
+                <br>
+                <br>
+            </div>
+            <div id="bloco2">
+                <fieldset id="remover">
+                    <legend>Apagar Livro</legend>
+                    <label>nome do Livro</label>
+                    <input id="nomelivro" name="nomelivro" type="text" size="50" required> <br>
+                    <button id="apagar" name="apagar" onclick="apagarLivro();">Apagar</button>                    
+                </fieldset>
+                <br>
+                <br>
+            </div>
+            <div id="bloco3">
+                 <fieldset id="alteracao">
+                    <legend>Alterar Livro</legend>
+                    <label>Livro</label>
+                    <input id="altnome" name="altnome" type="text" size="50"> <br>
+                    <label>Autor</label>
+                    <input id="altautor" name="altautor" type="text" size="50"> <br>
+                    <label>Editora</label>
+                    <input id="alteditora" name="alteditora" type="text" size="15">
+                    <label>Paginas</label>
+                    <input id="altpaginas" name="altpaginas" type="number" size="2"><br>
+                    <label>Genero</label>
+                    <input id="altgenero" name="altgenero" type="text" size="15"> <br> <br>
+                    
+                    <button id="buscar" name="buscar" onclick="buscarLivro();">Buscar</button>
+                    <button id="alterar" name="alterar" onclick="alterarLivro();">Alterar</button>
+                </fieldset>
+                <br>
+                <br>                
+            </div>
+            <div id="bloco4">
+                <fieldset id="show">
+                    <legend>Livros</legend>
+                </fieldset>
+            </div>
+        </div>
+        
+        <footer>
+        
+        </footer>
+    </main>
+    
+    <!-- chamada para o arquivos de script -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/scrpit.js"></script>
+</body>
+</html>
