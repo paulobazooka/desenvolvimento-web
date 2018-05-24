@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<meta name="autor" content="Paulo Sérgio do Nascimento 160013-3">
+	<meta name="curso" content="Desenvolvimento Web">
+	<meta name="data" content="23/05/2018">
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>JQuery</title>
+</head>
+
+<body>
+	<section class="center">
+		<div class="container-fluid">	
+			<div class="card-group row">
+				<div class="card-header col-lg-12">
+					<h1 class="text-center text-info">Cálculo de IMC</h1>
+				</div>
+				<div class="card-info col-lg-12 center-block">
+					<label class="label label-info" for="peso">Peso</label>
+					<input class="input-lg" type="text" id="peso" name="peso" required>
+					
+					<label class="label label-info" for="altura">Altura</label>
+					<input class="input-lg" type="text" id="altura" name="altura" required>
+
+					<button class="btn btn-info" onclick="enviar();">Enviar</button>
+				
+					<div class="container-fluid">
+						<div class="text-warning">
+							<label id="resultado"></label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+	</section>	
+</body>
+</html>

@@ -38,6 +38,7 @@ function apagarLivro(){
         if(nome_livro == livros[i].nome){
             console.log(i, livros[i]);
             livros.splice(i, 1);
+            document.getElementById('nomelivro').value= ""; 
         }
     }  
 }

@@ -1,0 +1,9 @@
+input{
+	width: 71.5%;
+}
+
+textarea{
+	width: 80%;
+	padding: 2px;
+	margin-top: 10px;
+}
