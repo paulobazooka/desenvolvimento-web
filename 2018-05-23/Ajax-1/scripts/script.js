@@ -10,7 +10,7 @@ function enviar() {
 
 		xhr.onreadystatechange = function () {
 	        
-	        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+	        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 	          
 	            var obj = JSON.parse(xhr.responseText); 
 	           
